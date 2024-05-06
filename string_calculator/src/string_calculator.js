@@ -15,9 +15,24 @@ StringCalculator.prototype.add = function(string_numbers) {
 
 };
 
-function findSpaceship(map){
+/*function findSpaceship(map){
 	return [7,2];
+}*/
+
+function findSpaceship(map) {
+    const lines = map.trim().split('\n');
+    for (let y = 0; y < lines.length; y++) {
+        const x = lines[y].indexOf('X');
+        if (x !== -1) {
+            return [x, y]; 
+        }
+    }
+    return "Spaceship lost forever.";
 }
+
+
+
+
 
 
 
