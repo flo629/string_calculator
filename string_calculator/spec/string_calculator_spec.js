@@ -36,10 +36,10 @@ describe('findSpaceShip',() =>{
         const map = "..........\n..X.......\n.........\n..........\n..........\n..........";
         expect(findSpaceship(map)).toEqual([2, 1]);
     });
-	/*it('should return "Spaceship lost forever." when spaceship is not found', () => {
+	it('should return "Spaceship lost forever." when spaceship is not found', () => {
         const map = "..........\n..........\n..........\n..........\n..........\n..........";
         expect(findSpaceship(map)).toEqual("Spaceship lost forever.");
-    });*/
+    });
 
    
     
