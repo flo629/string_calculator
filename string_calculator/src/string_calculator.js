@@ -6,8 +6,14 @@ StringCalculator.prototype.add = function(string_numbers) {
 		return 0;
 	}else
 	{
-		return parseInt(string_numbers);
+		const numbers = string_numbers.split(',').map(num => parseInt(num));
+        
+        return numbers.reduce((acc, cur) => acc + cur, 0);
+
 	}
 	
 
 };
+
+
+

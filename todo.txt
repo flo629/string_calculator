@@ -1,0 +1,8 @@
+findSpaceShip(map) =>[7,2]
+[1,1] => spaceshipt lost forever
+[1,2] => spaceshipt lost forever
+[2,1] => spaceshipt lost forever
+[3,3] => spaceshipt lost forever
+[1,4] => spaceshipt lost forever
+[4,1] => spaceshipt lost forever
+[7,1] => spaceshipt lost forever
