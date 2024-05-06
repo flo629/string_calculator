@@ -15,5 +15,10 @@ StringCalculator.prototype.add = function(string_numbers) {
 
 };
 
+function findSpaceship(map){
+	return [0,0];
+}
+
+
 
 
