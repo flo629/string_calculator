@@ -17,15 +17,20 @@ describe('String Calculator', function() {
 });
 
 describe('findSpaceShip',() =>{
-	it('should return the coordinates of the spaceshipt', ()=>{
+	it('should return the coordinates of the spaceship when found at [1, 1]', ()=>{
 		const map = "..........\n..........\n.......X..\n..........\n..........\n..........";
 		expect(findSpaceship(map)).toEqual([7,2]);
 	});
 
-	/*it('should return the coordinates of the spaceship when found at [1, 2]', () => {
-        const map = "..........\n..........\n..........\n..........\n..........\n..........";
+	it('should return the coordinates of the spaceship when found at [1, 1]', () => {
+        const map = "..........\n.X........\n..........\n..........\n..........\n..........";
+        expect(findSpaceship(map)).toEqual([1, 1]);
+    });
+
+	it('should return the coordinates of the spaceship when found at [1, 2]', () => {
+        const map = "..........\n..........\n.X........\n..........\n..........\n..........";
         expect(findSpaceship(map)).toEqual([1, 2]);
-    });*/
+    });
 
 	/*it('should return "Spaceship lost forever." when spaceship is not found', () => {
         const map = "..........\n..........\n..........\n..........\n..........\n..........";
